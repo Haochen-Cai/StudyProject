@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        /* 这是后代选择器,div中的a后代全部变成粉色 */
+        /* div a {
+            color: pink;
+        } */
+
+        /* 这是子代选择器: div中的儿子a变成绿色,p中的a不变 */
+        div > a {
+            color: green;
+        }
+
+        /* 这是子代选择器: p中的儿子a变成红色,div中的a不变 */
+        p > a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        父级
+        <a href="#">这是div里面的a</a>
+        <p>
+            <a href="#">这是div里面的p里面的a</a>
+        </p>
+    </div>
+</body>
+</html>

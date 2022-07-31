@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景相关属性连写</title>
+    <style>
+        /* 书写顺序：background: color image repeat position */
+        div {
+            width: 800px;
+            height: 800px;
+
+            /* 背景图位置如果是英文单词可以颠倒顺序，但是如果是位置坐标则不行 */
+            background: pink url(./images/你是这个.jpg) no-repeat center bottom;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
